@@ -40,8 +40,8 @@ function App() {
             boxShadow: 3,
             mb: 4 
           }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={4}>
+            <Grid container spacing={2} component="div">
+              <Grid item xs={12} md={4} component="div">
                 <TextField
                   fullWidth
                   placeholder="Nereye gidiyorsunuz?"
@@ -54,19 +54,19 @@ function App() {
                   }}
                 />
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={3} component="div">
                 <DatePicker
                   label="Giriş Tarihi"
                   sx={{ width: '100%' }}
                 />
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={3} component="div">
                 <DatePicker
                   label="Çıkış Tarihi"
                   sx={{ width: '100%' }}
                 />
               </Grid>
-              <Grid item xs={12} md={2}>
+              <Grid item xs={12} md={2} component="div">
                 <Button 
                   variant="contained" 
                   fullWidth 
@@ -85,9 +85,9 @@ function App() {
           </Box>
 
           {/* Otel Listesi */}
-          <Grid container spacing={3}>
+          <Grid container spacing={3} component="div">
             {[1, 2, 3, 4].map((item) => (
-              <Grid item xs={12} md={6} lg={4} key={item}>
+              <Grid item xs={12} md={6} lg={4} key={item} component="div">
                 <Card sx={{ height: '100%' }}>
                   <CardMedia
                     component="img"
